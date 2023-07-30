@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "338867520995",
+    "firebase_url": "https://clasificadora-93348-default-rtdb.firebaseio.com",
+    "project_id": "clasificadora-93348",
+    "storage_bucket": "clasificadora-93348.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338867520995:android:fca1172507539c512b0cd6",
+        "android_client_info": {
+          "package_name": "com.example.app_web_tesis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338867520995-osjp0gm7ijomcjt1g7l9oaqvfmhlbvnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8UhJiwW82IJg6yO2NBs4J4R1F9FgL_JI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338867520995-osjp0gm7ijomcjt1g7l9oaqvfmhlbvnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
