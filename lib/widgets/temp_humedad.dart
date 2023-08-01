@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class TempHumedad extends StatelessWidget {
-  final int temperatura;
-  final int humedad;
+  final double temperatura;
+  final double humedad;
   const TempHumedad({
     super.key,
     required this.temperatura,
@@ -26,9 +26,10 @@ class TempHumedad extends StatelessWidget {
                 width: 80,
                 child: Image.asset("lib/assets/images/temperatura.png"),
               ),
+              const SizedBox(width: 30),
               CircularPercentIndicator(
                 startAngle: 270,
-                radius: 40.0,
+                radius: 50.0,
                 lineWidth: 10.0,
                 percent: temperatura / 100,
                 center: Text(
@@ -41,9 +42,9 @@ class TempHumedad extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 50),
         const Text("Humedad"),
-        const SizedBox(height: 20),
+        const SizedBox(height: 10),
         SlideInUp(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -54,10 +55,10 @@ class TempHumedad extends StatelessWidget {
                 child: Image.asset("lib/assets/images/humedad.png",
                     fit: BoxFit.contain),
               ),
-              const SizedBox(width: 10),
+              const SizedBox(width: 30),
               CircularPercentIndicator(
                 startAngle: 270,
-                radius: 40.0,
+                radius: 50.0,
                 lineWidth: 10.0,
                 percent: humedad / 100,
                 center: Text(

@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:app_web_tesis/pages/qr_sensores.dart';
+//import 'package:app_web_tesis/pages/settings_page.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/pdf_page.dart';
@@ -42,12 +43,23 @@ class _CustomDrawerState extends State<CustomDrawer> {
               title: const Text("Manuales"),
               onTap: () async {
                 if (Platform.isAndroid) {
-                  const path = 'lib/assets/manuales/manual1.pdf';
+                  const path = 'lib/assets/manuales/Manual de Usuario.pdf';
                   final file = await PDFApi.loadAssets(path);
                   openPDF(file);
                 }
               },
-            )
+            ),
+          const Divider(),
+          //ListTile(
+          //  title: const Text("Ajustes"),
+          //  onTap: () {
+          //    Navigator.of(context).push(
+          //      MaterialPageRoute(
+          //        builder: (context) => const SettingsPage(),
+          //      ),
+          //    );
+          //  },
+          //),
         ],
       ),
     );

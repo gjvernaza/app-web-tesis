@@ -20,7 +20,7 @@ class CustomBottonNavigatorBar extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(Icons.donut_small_outlined), label: 'P-M-G'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.carpenter_outlined), label: 'Metálicas'),
+              icon: Icon(Icons.carpenter_outlined), label: 'Materiales'),
           BottomNavigationBarItem(
               icon: Icon(Icons.dew_point), label: 'Temperatura'),
         ]);

@@ -62,12 +62,12 @@ class Caratula extends StatelessWidget {
                             style: style, textAlign: TextAlign.start),
                         SizedBox(height: 20),
                         Text(
-                          "- Oso Homosexual        ",
+                          "- Bryan Ruiz        ",
                           textAlign: TextAlign.left,
                           style: TextStyle(fontSize: 20),
                         ),
                         Text(
-                          "- Chino kwai            ",
+                          "-Darwin  Carrillo            ",
                           textAlign: TextAlign.left,
                           style: TextStyle(fontSize: 20),
                         ),
@@ -83,7 +83,7 @@ class Caratula extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => const HomePage(
-                          title: 'Clasificadora del Oso homosexual'),
+                          title: 'LoRa Sensors'),
                     ),
                   );
                 },

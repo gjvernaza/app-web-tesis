@@ -25,8 +25,8 @@ class _HomePageState extends State<HomePage> {
   String _counterR = '';
   String _counterG = '';
   String _counterB = '';
-  int _temperatura = 0;
-  int _humedad = 0;
+  double _temperatura = 0;
+  double _humedad = 0;
   String _counterMetalicas = '';
   String _counterNoMetalicas = '';
   String _alerta = '0';
@@ -66,13 +66,13 @@ class _HomePageState extends State<HomePage> {
     _database.child('user1/temperatura').onValue.listen((event) {
       final dataTemp = event.snapshot.value.toString();
       setState(() {
-        _temperatura = double.parse(dataTemp).toInt();
+        _temperatura = double.parse(dataTemp);
       });
     });
     _database.child('user1/humedad').onValue.listen((event) {
       final dataHume = event.snapshot.value.toString();
       setState(() {
-        _humedad = double.parse(dataHume).toInt();
+        _humedad = double.parse(dataHume);
       });
     });
     _database.child('user1/counterMetalicas').onValue.listen((event) {
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
     Size size = MediaQuery.of(context).size;
     final windowsWidth = size.width;
     return Scaffold(
-      endDrawer: const CustomDrawer(),
+      endDrawer: const CustomDrawer(),      
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),

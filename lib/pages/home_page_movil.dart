@@ -15,8 +15,8 @@ class HomePageMovil extends StatelessWidget {
   final String counterB;
   final String counterMetalicas;
   final String counterNoMetalicas;
-  final int temperatura;
-  final int humedad;
+  final double temperatura;
+  final double humedad;
   final String piezaP;
   final String piezaM;
   final String piezaG;
@@ -78,8 +78,8 @@ class _HomeBody extends StatelessWidget {
   final String counterB;
   final String counterMetalicas;
   final String counterNoMetalicas;
-  final int temperatura;
-  final int humedad;
+  final double temperatura;
+  final double humedad;
   final String piezaP;
   final String piezaM;
   final String piezaG;
@@ -103,30 +103,33 @@ class _HomeBody extends StatelessWidget {
 
     final currentIndex = uiProvider.selectMenuOpt;
 
-    return switch (currentIndex) {
-      0 => Colores(
-          counterR: counterR,
-          counterG: counterG,
-          counterB: counterB,
-        ),
-      1 => PiezasTamanio(
-          piezasP: piezaP,
-          piezasM: piezaM,
-          piezasG: piezaG,
-        ),
-      2 => PiezasMetalicas(
-          counterMetalicas: counterMetalicas,
-          counterNoMetalicas: counterNoMetalicas,
-        ),
-      3 => TempHumedad(
-          temperatura: temperatura,
-          humedad: humedad,
-        ),
-      _ => Colores(
-          counterR: counterR,
-          counterG: counterG,
-          counterB: counterB,
-        )
-    };
+    return SingleChildScrollView(
+    padding: const EdgeInsets.only(top: 130),
+      child: switch (currentIndex) {
+        0 => Colores(
+            counterR: counterR,
+            counterG: counterG,
+            counterB: counterB,
+          ),
+        1 => PiezasTamanio(
+            piezasP: piezaP,
+            piezasM: piezaM,
+            piezasG: piezaG,
+          ),
+        2 => PiezasMetalicas(
+            counterMetalicas: counterMetalicas,
+            counterNoMetalicas: counterNoMetalicas,
+          ),
+        3 => TempHumedad(
+            temperatura: temperatura,
+            humedad: humedad,
+          ),
+        _ => Colores(
+            counterR: counterR,
+            counterG: counterG,
+            counterB: counterB,
+          )
+      },
+    );
   }
 }

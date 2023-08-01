@@ -14,8 +14,9 @@ class PiezasMetalicas extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        //const SizedBox(height: 20),
         const Text("Piezas Metálicas"),
-        const SizedBox(height: 10),
+        const SizedBox(height: 30),
         ElasticIn(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -33,9 +34,9 @@ class PiezasMetalicas extends StatelessWidget {
             ],
           ),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 50),
         const Text("Piezas No Metálicas"),
-        const SizedBox(height: 20),
+        const SizedBox(height: 30),
         ElasticIn(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
