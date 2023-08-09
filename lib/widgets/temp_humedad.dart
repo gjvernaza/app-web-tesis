@@ -1,4 +1,5 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:app_web_tesis/pages/chart_page.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
@@ -71,6 +72,17 @@ class TempHumedad extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: 15),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const Chart(),
+              ),
+            );
+          },
+          child: const Text("Observar Gráficas"),
+        )
       ],
     );
   }
