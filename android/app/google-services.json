@@ -30,6 +30,13 @@
             {
               "client_id": "338867520995-osjp0gm7ijomcjt1g7l9oaqvfmhlbvnd.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "338867520995-hmk9gt4pro2td4tprrupkqobiommcpvh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appWebTesis"
+              }
             }
           ]
         }
